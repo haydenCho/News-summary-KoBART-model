@@ -30,6 +30,8 @@
 - [AIHub-문서요약 텍스트](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=97)
     - 기사별로 이뤄진 json 파일 형태의 데이터셋을 제공
 
+<br/>
+
 #### 데이터 선별 과정
 1. 데이터셋(JSON)에서 기사 본문과 요약문 추출
 2. Pandas를 사용하여 .tsv 형태로 변환 → 메모리 효율적
@@ -101,6 +103,15 @@
 - 시각화
     - 학습 전후 ROUGE Score 그래프 비교
     <img src="https://github.com/user-attachments/assets/9983457f-bbca-45af-8f60-fb0a86b37e60" width="500px">
+
+<br/>
+
+### 코드 설명
+- train.py: 학습 코드
+- requirements.txt: 프로젝트에 필요한 라이브러리와 버전 리스트 (모델 로드나 학습시 사용)
+- mecabGogamza.ipynb: 기존 모델 정확도
+- plusMecab.ipynb: 최종 모델 정확도
+- infer.py: 모델 사용 코드
 
 <br/>
 
